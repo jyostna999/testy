@@ -1,0 +1,9 @@
+version: 2
+
+sources: 
+   - name :test
+    database:JYOSTNA_JAMPANA_COGNIZANT_COM_DB
+    schema:DBT_JJAMPANA
+    tables:
+      - name:sales_data
+      - name:clients
