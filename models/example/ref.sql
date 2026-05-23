@@ -1,6 +1,7 @@
 {{config(materialized='view')}}
 
-select  * from 
-{{ref('salesdb')}}
+select  case when status='shipped' then 'ok' 
+else 'notok' end as shipping_status 
+from {{ source('test','orders')}}
 
 

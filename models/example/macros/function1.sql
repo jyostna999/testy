@@ -1,4 +1,4 @@
-{%macro funtion1(x) %}
+{%macro function1(x) %}
 
 case when x = 'Shipped' then 'shippy'
     else 'others'
